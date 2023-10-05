@@ -1,0 +1,40 @@
+<app-header titulo="INICIAR SESIÓN"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label position="floating">Ingrese su RUT</ion-label>
+      <ion-input maxlength="12"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Ingrese su contraseña</ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Mostrar contraseña</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+  
+  </ion-list>
+  
+
+  <ion-list class="ion-text-center">
+
+    <ion-button size="default" class="button-margin">Iniciar sesión</ion-button>
+
+    <p class="centered-text recovery_pass" routerLink="/recuperar-password">Olvidé la contraseña</p>
+
+    <p class="centered-text exit_pass" routerLink="/folder/inbox" style="color:red">Regresar</p>
+  
+  </ion-list>
+
+</ion-content>
