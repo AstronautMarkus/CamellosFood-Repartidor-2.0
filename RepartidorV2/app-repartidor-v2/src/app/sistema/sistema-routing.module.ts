@@ -8,6 +8,10 @@ import { MenuPrincipalPage } from './page/menu-principal/menu-principal.page';
 import { StartLoggedPage } from './page/start-logged/start-logged.page';
 import { MenuRepaPage } from './page/menu_repa/menu-repa/menu-repa.page';
 
+import { ListaPedidosPage } from './page/menu_repa/lista-pedidos/lista-pedidos.page';
+import { MiPerfilPage } from './page/menu_repa/mi-perfil/mi-perfil.page';
+import { HistorialPedidosPage } from './page/menu_repa/historial-pedidos/historial-pedidos.page';
+
 const routes: Routes = [
   {
     path: 'login',
@@ -36,6 +40,18 @@ const routes: Routes = [
   {
     path: 'menu_repa',
     component: MenuRepaPage,
+  },
+  {
+    path: 'lista_pedidos',
+    component: ListaPedidosPage,
+  },
+  {
+    path: 'mi_perfil',
+    component: MiPerfilPage,
+  },
+  {
+    path: 'historial_pedidos',
+    component: HistorialPedidosPage,
   },
 ];
 

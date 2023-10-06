@@ -9,7 +9,7 @@ export class HeaderComponent  implements OnInit {
 
 // Input permite recibir la variable 
   //          por parámetro desde el Html
-  @Input() titulo:string = 'Camello Food'  //<==========
+  @Input() titulo:string = 'Camellos Food'  //<==========
 
   constructor() { }
 

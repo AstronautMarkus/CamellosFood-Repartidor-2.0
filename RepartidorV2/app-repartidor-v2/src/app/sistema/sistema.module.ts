@@ -12,6 +12,10 @@ import { MenuPrincipalPage } from './page/menu-principal/menu-principal.page';
 import { StartLoggedPage } from './page/start-logged/start-logged.page';
 import { MenuRepaPage } from './page/menu_repa/menu-repa/menu-repa.page';
 
+import { ListaPedidosPage } from './page/menu_repa/lista-pedidos/lista-pedidos.page';
+import { MiPerfilPage } from './page/menu_repa/mi-perfil/mi-perfil.page';
+import { HistorialPedidosPage } from './page/menu_repa/historial-pedidos/historial-pedidos.page';
+
 import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
@@ -23,6 +27,9 @@ import { ComponentsModule } from '../components/components.module';
     MenuPrincipalPage,
     StartLoggedPage,
     MenuRepaPage,
+    ListaPedidosPage,
+    MiPerfilPage,
+    HistorialPedidosPage,
   ],
   imports: [
     CommonModule,
