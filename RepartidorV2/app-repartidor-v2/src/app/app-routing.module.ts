@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'sistema/login',
+    redirectTo: 'sistema/homepage',
     pathMatch: 'full'
     
   },
