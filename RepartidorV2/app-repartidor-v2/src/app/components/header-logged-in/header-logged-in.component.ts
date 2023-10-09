@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HeaderLoggedInComponent  implements OnInit {
 
   @Input() titulo:string = 'Camellos Food (Logged)'  //<==========
+  @Input() showButton = true; // Controla la visibilidad del botón
 
   constructor() { }
 

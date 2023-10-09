@@ -12,6 +12,9 @@ import { ListaPedidosPage } from './page/menu_repa/lista-pedidos/lista-pedidos.p
 import { MiPerfilPage } from './page/menu_repa/mi-perfil/mi-perfil.page';
 import { HistorialPedidosPage } from './page/menu_repa/historial-pedidos/historial-pedidos.page';
 
+import { DetallePedidoPage } from './page/menu_repa/detalle-pedido/detalle-pedido.page';
+import { SeguimientoPedidoPage } from './page/menu_repa/seguimiento-pedido/seguimiento-pedido.page';
+
 const routes: Routes = [
   {
     path: 'login',
@@ -52,6 +55,14 @@ const routes: Routes = [
   {
     path: 'historial_pedidos',
     component: HistorialPedidosPage,
+  },
+  {
+    path: 'detalle-pedido',
+    component: DetallePedidoPage,
+  },
+  {
+    path: 'seguimiento-pedido',
+    component: SeguimientoPedidoPage,
   },
 ];
 

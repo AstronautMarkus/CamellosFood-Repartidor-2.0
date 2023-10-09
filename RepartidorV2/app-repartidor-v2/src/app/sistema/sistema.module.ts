@@ -16,7 +16,12 @@ import { ListaPedidosPage } from './page/menu_repa/lista-pedidos/lista-pedidos.p
 import { MiPerfilPage } from './page/menu_repa/mi-perfil/mi-perfil.page';
 import { HistorialPedidosPage } from './page/menu_repa/historial-pedidos/historial-pedidos.page';
 
+import { SeguimientoPedidoPage } from './page/menu_repa/seguimiento-pedido/seguimiento-pedido.page';
+import { DetallePedidoPage } from './page/menu_repa/detalle-pedido/detalle-pedido.page';
+
 import { ComponentsModule } from '../components/components.module';
+
+
 
 @NgModule({
   declarations: [
@@ -30,6 +35,8 @@ import { ComponentsModule } from '../components/components.module';
     ListaPedidosPage,
     MiPerfilPage,
     HistorialPedidosPage,
+    DetallePedidoPage,
+    SeguimientoPedidoPage
   ],
   imports: [
     CommonModule,
