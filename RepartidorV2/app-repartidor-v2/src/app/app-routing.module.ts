@@ -18,6 +18,7 @@ const routes: Routes = [
     path: 'sistema',
     loadChildren: () => import('./sistema/sistema.module').then( m => m.SistemaModule)
   },
+  
 ];
 
 @NgModule({

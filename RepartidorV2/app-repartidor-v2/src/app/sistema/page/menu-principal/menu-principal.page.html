@@ -1,20 +1,28 @@
-<app-header titulo="MENU PRINCIPAL"></app-header>
+<app-header-logged-in titulo="MENU PRINCIPAL"></app-header-logged-in>
+<app-sidemenu-logged-in></app-sidemenu-logged-in> 
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">menu_principal</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
 
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-button shape="round" color="danger" class="custom-button" style="margin-left: 0px;" routerLink="/sistema/start_logged">
-      <p>Iniciar sistema</p>
-    </ion-button>
-  </ion-fab>
+  <ion-card style="--background: var(--camello-primary)" routerLink="/sistema/start_logged">
+    <ion-card-header>
+      <ion-card-title style="color: white;">INICIAR SISTEMA</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="color: white;">
+      Al iniciar el sistema deberá rellenar casillas para confirmar su información.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="danger" style="cursor: pointer;" routerLink="/sistema/homepage">
+    <ion-card-header>
+      <ion-card-title style="color: white;">CERRAR SESIÓN</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="color: white;">
+      Para salir del sistema, presione este botón.
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
-
 
 
 <ion-footer>

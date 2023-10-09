@@ -1,4 +1,4 @@
-<app-header titulo="INICIAR SESIÓN"></app-header>
+<app-header titulo="INICIAR SESIÓN" [showButton]="false"></app-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -30,9 +30,9 @@
 
     <ion-button style="--background: var(--camello-primary)" size="default" class="button-margin" routerLink="/sistema/menu_principal">Iniciar sesión</ion-button>
 
-    <p style="color:blue" class="centered-text recovery_pass texto-enlace" routerLink="/sistema/recover_password">Olvidé la contraseña</p>
+    <p style="color:blue; cursor: pointer;" routerLink="/sistema/recover_password">Olvidé la contraseña</p>
 
-    <p class="centered-text exit_pass texto-enlace" routerLink="/sistema/homepage" style="color:red">Regresar</p>
+    <p routerLink="/sistema/homepage" style="color:red; cursor: pointer;">Regresar</p>
   
   </ion-list>
 

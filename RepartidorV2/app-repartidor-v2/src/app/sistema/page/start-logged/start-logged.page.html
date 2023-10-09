@@ -1,4 +1,4 @@
-<app-header titulo="ANTES DE EMPEZAR"></app-header>
+<app-header titulo="ANTES DE EMPEZAR" [showButton]="false"></app-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -25,15 +25,16 @@
   <ion-list class="ion-text-center">
 
     <ion-item lines="none">
-      <ion-checkbox >Verificar estado del vehículo</ion-checkbox>
+      <ion-checkbox>Verificar estado del vehículo</ion-checkbox>
     </ion-item>
     <ion-item lines="none">
-      <ion-checkbox >Estoy usando ropa adecuada</ion-checkbox>
+      <ion-checkbox>Estoy usando ropa adecuada</ion-checkbox>
     </ion-item>
     <ion-item lines="none">
       <ion-checkbox  style="font-size: small;">llevo bolsa térmica para los productos</ion-checkbox>
     </ion-item>
-    <ion-button class="button-margin"  routerLink="/sistema/menu_repa">Enviar</ion-button>
+    
+    <ion-button style="--background: var(--camello-primary)" class="button-margin" routerLink="/sistema/menu_repa">Enviar</ion-button>
   
   </ion-list>
 

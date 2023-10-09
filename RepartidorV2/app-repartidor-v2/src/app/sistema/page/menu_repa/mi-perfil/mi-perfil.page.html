@@ -1,26 +1,14 @@
-<app-header titulo="MI PERFIL"></app-header>
+<app-header-logged-in titulo="MI PERFIL"></app-header-logged-in>
+<app-sidemenu-logged-in></app-sidemenu-logged-in> 
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">mi-perfil</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">mi-perfil</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
 
   <div class="centered-container">
     <img alt="" class="rounded-image" src="assets/img/camelloPhoto.jpg" />
   </div>
 
-  <ion-list class="ion-text-center">
-    <ion-button color="primary">Cambiar imagen</ion-button>
-  </ion-list>
 
   <ion-list >
 
@@ -42,11 +30,14 @@
 
   </ion-list>
 
-  <ion-button expand="full" (click)="cambiarContrasena = !cambiarContrasena">
+  <ion-button style="--background: var(--camello-primary)" expand="full" (click)="cambiarContrasena = !cambiarContrasena">
     {{ cambiarContrasena ? 'Cancelar' : 'Cambiar Contraseña' }}
   </ion-button>
 
-  <ion-button expand="full" [disabled]="!cambiarContrasena" id="present-alert">Confirmar cambios</ion-button>
+  <ion-button style="--background: var(--camello-primary)"  expand="full" [disabled]="!cambiarContrasena" id="present-alert">Confirmar cambios</ion-button>
+
+
+  
 
   <ion-alert
     trigger="present-alert"

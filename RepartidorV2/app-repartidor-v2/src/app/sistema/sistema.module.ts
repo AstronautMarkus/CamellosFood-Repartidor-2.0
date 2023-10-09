@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 import { SistemaRoutingModule } from './sistema-routing.module';
 
 import { IonicModule } from '@ionic/angular';
@@ -36,6 +36,7 @@ import { ComponentsModule } from '../components/components.module';
     SistemaRoutingModule,
     IonicModule, 
     ComponentsModule,
+    FormsModule,
   ]
 })
 export class SistemaModule { }
